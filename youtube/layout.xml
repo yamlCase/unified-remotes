@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <layout onLaunch="launch" onPause="pause"> -->
+<layout color="ffd63b09">
+  <!-- <tabs>
+
+    <tab text="Plex" color="956816"> -->
+      <grid>
+        <row>
+          <button icon="windows" onTap="close" />
+          <button icon="fullscreen" onTap="fullscreen" />
+          <button icon="home" onTap="home" />
+        </row>
+        <row>
+            <button icon="back" onTap="back" />
+            <button icon="window" onTap="fullscreen_video" />
+            <button icon="playpause" onTap="play_pause" />
+        </row>
+        <row weight="2">
+          <grid>
+            <row>
+              <button icon="up" onTap="guide_up" />
+            </row>
+            <row>
+              <button icon="down" onTap="guide_down" />
+            </row>
+          </grid>
+          <grid weight="4" color="#1f2021">
+            <row>
+              <touch id="touch"
+                ondown="mouse_down"
+                onup="mouse_up"
+                ontap="mouse_tap" 
+                ontouchdelta="delta" />
+            </row>
+          </grid>
+          <grid>
+            <row>
+              <button icon="rotateright" onTap="skip_ahead" />
+            </row>
+            <row>
+              <button icon="rotateleft" onTap="skip_back" />
+            </row>
+          </grid>
+        </row>
+        <row weight="0.5">
+          <button icon="vmute" onTap="mute" />     
+          <button icon="previous" onTap="start" />
+          <button icon="next" onTap="live" />
+        </row>
+        <row weight="0.5">
+          <button text="CC" onTap="sub_toggle" />
+          <button text="CC color" onTap="sub_color" />
+        </row>
+      </grid>
+    <!-- </tab>
+  </tabs> -->
+</layout>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- <layout onLaunch="launch" onPause="pause"> -->
+<layout color="956816">
+  <grid>
+    <row>
+      <button icon="windows" onTap="close" />
+      <button weight="0.75" icon="window" onTap="aspect_cycle" />
+      <button weight="0.75" icon="fullscreen" onTap="fullscreen" />
+      <button icon="home" onTap="home" />
+    </row>
+    <row>
+          <button icon="stop" onTap="stop" />
+          <button icon="playpause" onTap="play_pause" />
+
+    </row>
+    <row weight="2">
+      <grid>
+        <row>
+          <button icon="back" onTap="back" />
+        </row>
+        <row>
+          <button icon="unlock" onTap="played_toggle" />     
+        </row>
+      </grid>
+      <dpad weight="3" >
+        <item onTap="up"/>
+        <item onTap="right"/>
+        <item onTap="down"/>
+        <item onTap="left"/>
+      </dpad>
+      <button icon="select" onTap="select" />
+    </row>
+    <row weight="0.5">
+      <button text="CC\nprev" onTap="sub_prev" />
+      <button text="CC" onTap="sub_toggle" />
+      <button text="CC\nnext" onTap="sub_next" />
+    </row>
+    <row weight="0.5">
+      <button text="slower" onTap="sub_slower" />
+      <button text="faster" onTap="sub_faster" />
+    </row>
+  </grid>
+</layout>
