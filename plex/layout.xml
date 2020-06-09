@@ -3,32 +3,8 @@
 <layout color="956816">
   <grid>
     <row>
-      <button icon="windows" onTap="close" />
-      <button weight="0.75" icon="window" onTap="aspect_cycle" />
-      <button weight="0.75" icon="fullscreen" onTap="fullscreen" />
-      <button icon="home" onTap="home" />
-    </row>
-    <row>
-          <button icon="stop" onTap="stop" />
-          <button icon="playpause" onTap="play_pause" />
-
-    </row>
-    <row weight="2">
-      <grid>
-        <row>
-          <button icon="back" onTap="back" />
-        </row>
-        <row>
-          <button icon="unlock" onTap="played_toggle" />     
-        </row>
-      </grid>
-      <dpad weight="3" >
-        <item onTap="up"/>
-        <item onTap="right"/>
-        <item onTap="down"/>
-        <item onTap="left"/>
-      </dpad>
-      <button icon="select" onTap="select" />
+      <button icon="power" onTap="close" />
+      <button icon="fullscreen" onTap="fullscreen" />
     </row>
     <row weight="0.5">
       <button text="CC\nprev" onTap="sub_prev" />
@@ -38,6 +14,28 @@
     <row weight="0.5">
       <button text="slower" onTap="sub_slower" />
       <button text="faster" onTap="sub_faster" />
+    </row>
+    <row weight="0.5">
+      <space />
+    </row>
+    <row weight="3">
+      <grid>
+        <row> <button icon="back" onTap="back" /> </row>
+        <row> <button icon="left" onTap="left" /> </row>
+        <row> <button icon="unlock" onTap="played_toggle" />  </row>
+      </grid>
+
+      <grid>
+        <row> <button icon="up" onTap="up" /> </row>
+        <row> <button icon="select" onTap="select" /> </row>
+        <row> <button icon="down" onTap="down" /> </row>
+      </grid>
+      <grid>
+        <row> <button icon="playpause" onTap="play_pause" /> </row>
+        <row> <button icon="right" onTap="right" /> </row>
+        <row> <button icon="stop" onTap="stop" /> </row>
+      </grid>
+      
     </row>
   </grid>
 </layout>

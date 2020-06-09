@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- <layout onLaunch="launch" onPause="pause"> -->
-<layout color="ffd63b09">
+<layout color="ffd63b09" >
   <!-- <tabs>
 
     <tab text="Plex" color="956816"> -->
       <grid>
-        <row>
-          <button icon="windows" onTap="close" />
-          <button icon="fullscreen" onTap="fullscreen" />
-          <button icon="home" onTap="home" />
-        </row>
-        <row>
-            <button icon="back" onTap="back" />
+        <row >
+          <button icon="power" onTap="close" />
             <button icon="window" onTap="fullscreen_video" />
-            <button icon="playpause" onTap="play_pause" />
+          <button icon="fullscreen" onTap="fullscreen" />
         </row>
         <row weight="2">
           <grid>
@@ -35,14 +30,19 @@
           </grid>
           <grid>
             <row>
-              <button icon="rotateright" onTap="skip_ahead" />
+              <button icon="right" onTap="skip_ahead" />
             </row>
             <row>
-              <button icon="rotateleft" onTap="skip_back" />
+              <button icon="left" onTap="skip_back" />
             </row>
           </grid>
         </row>
-        <row weight="0.5">
+        <row >
+            <button icon="back" onTap="back" />
+            <button icon="playpause" onTap="play_pause" />
+        </row>
+
+        <row >
           <button icon="vmute" onTap="mute" />     
           <button icon="previous" onTap="start" />
           <button icon="next" onTap="live" />
