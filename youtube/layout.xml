@@ -41,7 +41,6 @@
             <button icon="back" onTap="back" />
             <button icon="playpause" onTap="play_pause" />
         </row>
-
         <row >
           <button icon="vmute" onTap="mute" />     
           <button icon="previous" onTap="start" />

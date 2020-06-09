@@ -2,40 +2,41 @@
 <!-- <layout onLaunch="launch" onPause="pause"> -->
 <layout color="956816">
   <grid>
-    <row>
-      <button icon="power" onTap="close" />
-      <button icon="fullscreen" onTap="fullscreen" />
-    </row>
-    <row weight="0.5">
-      <button text="CC\nprev" onTap="sub_prev" />
-      <button text="CC" onTap="sub_toggle" />
-      <button text="CC\nnext" onTap="sub_next" />
-    </row>
-    <row weight="0.5">
-      <button text="slower" onTap="sub_slower" />
-      <button text="faster" onTap="sub_faster" />
-    </row>
-    <row weight="0.5">
-      <space />
-    </row>
-    <row weight="3">
+    <row weight="2">
       <grid>
-        <row> <button icon="back" onTap="back" /> </row>
-        <row> <button icon="left" onTap="left" /> </row>
-        <row> <button icon="unlock" onTap="played_toggle" />  </row>
+        <row >
+          <button icon="power" onTap="close" />
+          <button icon="fullscreen" onTap="fullscreen" />
+        </row>
+        <row >
+          <button text="CC\nprev" onTap="sub_prev" />
+          <button text="CC" onTap="sub_toggle" />
+          <button text="CC\nnext" onTap="sub_next" />
+        </row>
+        <row >
+          <button text="slower" onTap="sub_slower" />
+          <button text="faster" onTap="sub_faster" />
+        </row>
       </grid>
-
-      <grid>
-        <row> <button icon="up" onTap="up" /> </row>
-        <row> <button icon="select" onTap="select" /> </row>
-        <row> <button icon="down" onTap="down" /> </row>
+    </row>
+    <row weight="3"> 
+      <grid color="785801"> 
+        <row>
+          <button icon="back" onTap="back" /> 
+          <button icon="up" onTap="up" /> 
+          <button icon="playpause" onTap="play_pause" />
+        </row>
+        <row>
+          <button icon="left" onTap="left" />
+          <button icon="select" onTap="select" />
+          <button icon="right" onTap="right" />
+        </row>
+        <row>
+          <button icon="unlock" onTap="played_toggle" /> 
+          <button icon="down" onTap="down" />
+          <button icon="stop" onTap="stop" />
+        </row>
       </grid>
-      <grid>
-        <row> <button icon="playpause" onTap="play_pause" /> </row>
-        <row> <button icon="right" onTap="right" /> </row>
-        <row> <button icon="stop" onTap="stop" /> </row>
-      </grid>
-      
     </row>
   </grid>
 </layout>
